@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        main {
+            margin: 20px;
+        }
+
+        .question {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .options li {
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exam Page</h1>
+    </header>
+
+    <main>
+        <div class="question">
+            <h2>Question 1: What is the capital of France?</h2>
+            <ul class="options">
+                <li><label><input type="radio" name="q1" value="paris"> Paris</label></li>
+                <li><label><input type="radio" name="q1" value="berlin"> Berlin</label></li>
+                <li><label><input type="radio" name="q1" value="london"> London</label></li>
+                <li><label><input type="radio" name="q1" value="rome"> Rome</label></li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <h2>Question 2: What is the largest mammal?</h2>
+            <ul class="options">
+                <li><label><input type="radio" name="q2" value="elephant"> Elephant</label></li>
+                <li><label><input type="radio" name="q2" value="bluewhale"> Blue Whale</label></li>
+                <li><label><input type="radio" name="q2" value="giraffe"> Giraffe</label></li>
+                <li><label><input type="radio" name="q2" value="lion"> Lion</label></li>
+            </ul>
+        </div>
+
+        <!-- Add more questions as needed -->
+
+        <button onclick="submitExam()">Submit Exam</button>
+    </main>
+
+    <script>
+        function submitExam() {
+            // Add logic to calculate and display the result
+            alert("Exam submitted! Add logic to calculate and display the result.");
+        }
+    </script>
+</body>
+</html>
